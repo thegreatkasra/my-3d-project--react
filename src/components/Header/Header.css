@@ -1,0 +1,28 @@
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.header--nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 40px 0;
+}
+.header--nav ul{
+    display: flex;
+    gap: 24px;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+@media (max-width: 690px){
+    .header{
+        display: none;
+    }
+}

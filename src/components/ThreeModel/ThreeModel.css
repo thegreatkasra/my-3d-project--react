@@ -1,0 +1,17 @@
+.spline{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1405px){
+    .spline--container{
+        z-index: -10;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        scale: 0.9;
+    }
+}

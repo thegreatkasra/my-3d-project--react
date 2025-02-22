@@ -1,0 +1,15 @@
+.button{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--primary-color);
+    padding: 8px 40px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 1s ease;
+    filter: opacity(50%);
+}
+.button:hover{
+    scale: 1.1;
+    filter: opacity(100%);
+}
