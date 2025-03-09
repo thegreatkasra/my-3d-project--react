@@ -101,7 +101,11 @@ h1, h2, h3, h4, h5, h6, p {
     .header--logo{
       position: absolute;
       top: 24px;
-      left: 50%;
+      left: 49.5%;
       transform: translate(-50%);
+  }
+  *{
+    list-style: none;
+    margin: 0 8px;
   }
 }

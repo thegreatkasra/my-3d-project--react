@@ -13,3 +13,11 @@
     scale: 1.1;
     filter: opacity(100%);
 }
+
+@media (max-width:770px) {
+    .button{
+        width: 100%;
+        border-radius: 10px;
+        margin: 0;
+    }
+}

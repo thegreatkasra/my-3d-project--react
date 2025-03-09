@@ -35,7 +35,7 @@ const Contact = () => {
          </div>
          <footer>
           <hr style={{ backgroundColor: '#808080', height: '1px', border: 'none' }} />
-          <p style={{color: '#808080', marginTop:24 , marginLeft:80 }} >Copy right reserved - Designed by Kasra Torabi</p>
+          <p>Copy right reserved - Designed by Kasra Torabi</p>
          </footer>
          </div>
     </section>

@@ -26,12 +26,9 @@ const About = () => {
 
     if (!aboutSection || !skillsContainer) return;
 
-    ScrollTrigger.refresh(); // Ensures animations trigger correctly
+    ScrollTrigger.refresh(); 
 
 
-    
-
-    // Skills Icons Animation (Appear one by one, top to bottom)
     gsap.from(skillsContainer.children, {
       y: 50,
       opacity: 0,
@@ -45,7 +42,7 @@ const About = () => {
       }
     });
 
-    // Hover Effect (Scale images on hover)
+
     gsap.utils.toArray(".about--skills-container div").forEach((img) => {
       img.addEventListener("mouseenter", () =>
         gsap.to(img, { scale: 1.2, duration: 0.3 })
@@ -58,11 +55,8 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" ref={aboutRef} style={{ height: "100vh", padding: "50px" }}>
-      <div className="about">
+    <section id="about" ref={aboutRef} style={{ height: "100vh" }}>
         
-
-
         {/* Content */}
         <div className="about--details">
           
@@ -79,11 +73,11 @@ const About = () => {
               <div><img src={Ai} alt="ai" /></div>
               <div><img src={PS} alt="ps" /></div>
               <div><img src={Spline} alt="spline" /></div>
-              <div><img src={webflow} alt="webflow" /></div>
+              <div><img className="display-on-mobile" src={webflow} alt="webflow" /></div>
             </div>
           </div>
         </div>
-      </div>
+
     </section>
   );
 };

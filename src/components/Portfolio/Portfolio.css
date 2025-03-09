@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 20px;
+    margin: 80px 20px;
 }
 .portfolio--header{
     display: flex;
@@ -97,6 +97,11 @@
     }
 }
 @media (max-width: 800px) {
+    #portfolio{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     .portfolio--container{
         flex-direction: column;
         margin: 0;
@@ -128,24 +133,38 @@
 }
 @media(max-width: 650px){
     .portfolio{
-        margin: 0;
+        margin-top: 0;
     }
     .portfolio--header{
         width: 100%;
         font-size: 12px;
     }
     .portfolio--container{
-        margin: 20px 0px;
+        margin: 40px 0px 20px;
+        position: absolute;
+        padding: 0;
+        left: 50%;
+        transform: translate(-50%);
     }
-    .portfolio--cards{
+    .portfolio--card--image{
+        width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        position: relative;
-        left: -70px;
+        align-items: center;
+        margin-bottom: 32px;
     }
+
     .potfolio--link-behance p{
         display: none;
     }
-
+    .potfolio--link-behance{
+        scale: 2.5;
+    }
+    .portfolio--links{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
 }

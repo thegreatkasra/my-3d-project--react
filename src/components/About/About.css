@@ -2,9 +2,11 @@
     background-image: url('./svg/bg.png');
     margin-top: 40px;
 }
-.about{
-   width: 100%;
-    margin: 0px 24px;
+.about--details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 24px 0px;
 }
 .about--text{
     width: 50%;
@@ -22,12 +24,7 @@
 .about--text span{
     color: var(--accent-color);
 }
-.about--details{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-}
+
 
 .about--skills{
     width: 50%;
@@ -63,25 +60,43 @@
     }
   }
   @media (max-width: 695px){
+
     #about{
-        width: 100%;
         background-image: none;
-        margin-top: 10px;
+        border: none;
+        padding: 0;
+        margin: 0;
     }
-    .about{
+    .about--text p{
         width: 100%;
-        position: absolute;
-        left: 10px;
-        margin: 0px 6px;
-     }
+    }
+     .about--details{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
     .about--text{
-        width: 50%;
+        width: 100%;
+        padding-top: 42px;
+        text-align: center;
     }
     .about--text p{
         font-size: 16px;
         width:100%;
     }
     .about--skills{
-        width: 50%;
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;   
+    }
+    .about--skills-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .display-on-mobile{
+        display: none;
     }
   }

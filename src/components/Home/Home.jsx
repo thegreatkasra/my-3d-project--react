@@ -5,9 +5,9 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <section className='home' id="home" style={{ height: '100vh' }}>
+    <section id="home" style={{ height: '100vh' }}>
 
-      <div>
+      <div className='home'>
       <div className="home--header">
         <Header />
       </div>
