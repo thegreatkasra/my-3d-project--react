@@ -95,6 +95,8 @@
     .about--skills-container{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .display-on-mobile{
         display: none;
