@@ -8,7 +8,7 @@ const Home = () => {
     <section id="home" style={{ height: '100vh' }}>
 
       <div className='home'>
-      <div className="home--header">
+      <div>
         <Header />
       </div>
 

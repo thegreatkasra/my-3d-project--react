@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './Header.css';
-
+import logo from '../../logo.svg';
 
 
 const Header = () => {
@@ -45,10 +45,14 @@ const Header = () => {
     section.scrollIntoView({ behavior: 'smooth' });
   };
 
-  return (
-    <>
+  const download = "https://drive.google.com/file/d/1WvEquNX0_zVPLkRCQ_cFbayL3wc6tjWo/view?usp=drive_link"
 
+  return (
     <div className='header'>
+
+      <div className="header--logo">
+        <img src={logo} alt="logo" />
+      </div>
 
       <div className="header--nav">
         <ul>
@@ -58,9 +62,12 @@ const Header = () => {
           <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'contact')}>Contact</li>
         </ul>
       </div>
+
+      <div className="header--download-btn">
+          <button onClick={download} >Resume</button>
+      </div>
+
     </div>
-    </>
-    
   );
 };
 
