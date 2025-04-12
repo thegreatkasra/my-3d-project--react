@@ -84,6 +84,27 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
     z-index: 10;
 }
+.header--download-btn{
+  position: absolute;
+  right: 0;
+  top: 24px;
+}
+.header--download-btn button{
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.header--download-btn button:hover{
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  scale: 0.95;
+}
 
 *{
     list-style: none;
@@ -97,7 +118,12 @@ h1, h2, h3, h4, h5, h6, p {
     --font-size: 16px;
   }
 
-  @media (max-width: 690px){
+  @media (max-width: 1000px){
+    .header--download-btn{
+      display: none;
+    }
+  }
+  @media (max-width: 750px){
     .header--logo{
       position: absolute;
       top: 24px;
@@ -107,5 +133,12 @@ h1, h2, h3, h4, h5, h6, p {
   *{
     list-style: none;
     margin: 0 8px;
+  }
+  .header--download-btn{
+    display: block;
+    right: 0;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
   }
 }

@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   const handleClick = (e, sectionId) => {
-    e.preventDefault(); // Prevent default anchor click behavior
+    e.preventDefault();
     gsap.to(e.target, {
       color: '#0089ED',
       textDecoration: 'underline',
