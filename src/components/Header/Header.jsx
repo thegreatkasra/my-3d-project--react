@@ -45,7 +45,10 @@ const Header = () => {
     section.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const download = "https://drive.google.com/file/d/1WvEquNX0_zVPLkRCQ_cFbayL3wc6tjWo/view?usp=drive_link"
+  const handleDownload = () => {
+    window.open('https://drive.google.com/file/d/1WvEquNX0_zVPLkRCQ_cFbayL3wc6tjWo/view?usp=drive_link');
+  };
+  
 
   return (
     <div className='header'>
@@ -64,7 +67,7 @@ const Header = () => {
       </div>
 
       <div className="header--download-btn">
-          <button onClick={download} >Resume</button>
+          <button onClick={handleDownload} >Resume</button>
       </div>
 
     </div>

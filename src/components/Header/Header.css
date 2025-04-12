@@ -1,38 +1,46 @@
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: transparent;
     z-index: 1;
     width: 100%;
-    margin: 0;
+    margin-top: 40px;
 }
 
 .header--nav{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 40px 0;
 }
 .header--nav ul{
     display: flex;
     gap: 24px;
     transition: color 0.3s;
+    justify-content: center;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.header--nav ul li{
+    padding: 0 16px;
 }
 .header--logo{
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 12px;
 }
 .header--logo img{
     height: 50px;
     cursor: pointer;
     z-index: 10;
+}
+.header--download-btn{
+    margin: 0 12px;
 }
 .header--download-btn button{
     cursor: pointer;
@@ -51,13 +59,40 @@
     border: 1px solid var(--accent-color);
     scale: 0.95;
   }
+  
+@media (max-width: 1000px){
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header--nav{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .header--nav ul{
+        gap: 0;
+    }
+    .header--nav ul li{
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 750px){
     .header--nav{
         display: none;
     }
     .header{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
         flex-direction: column;
+        gap: 8px;
     }
     .header--download-btn{
         margin-top: 12px;
@@ -65,18 +100,8 @@
         align-items: center;
         justify-content: center;
     }
-    .header--logo{
-        margin-top: 12px;
+    .header--download-btn button{
+        border: none;
     }
-}
 
-@media (max-width: 1000px){
-    .header{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .header--download-btn{
-        margin-top: 12px;
-    }
 }

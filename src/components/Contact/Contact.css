@@ -1,12 +1,16 @@
 .contact{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .contact--container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact--header{
+    font-size: 18px;
+    margin: 0 40px ;
 }
 .contact--form{
     width: 50%;
@@ -19,11 +23,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 12px;
-}
-footer p{
-    color: #808080;
-    margin-top: 24px ;
-    margin-left: 80px ;
 }
 
 @media (max-width:770px) {
@@ -53,15 +52,19 @@ footer p{
         padding: 0;
     }
     .contact--header{
-        width: 100%;
+        width:90%;
+        font-size: 14px;
         margin: 0;
         padding: 0;
     }
     .contact--form{
         width: 100%;
+        display: flex;
+        justify-content: center;
+
     }
     .contact--buttons{
-        width: 100%;
+        width: 90%;
     }
     .contact footer{
         width: 100%;

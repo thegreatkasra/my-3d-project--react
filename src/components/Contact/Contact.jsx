@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" style={{ height: '100vh'}}>
+    <div id="contact" style={{ height: '100vh'}}>
          
         <div className='contact' >
          <div className="contact--header">
@@ -33,12 +33,9 @@ const Contact = () => {
               <Button  onClick={handleClickEmail}  btnName='Email' />
             </div>
          </div>
-         <footer>
-          <hr style={{ backgroundColor: '#808080', height: '1px', border: 'none' }} />
-          <p>Copy right reserved - Designed by Kasra Torabi</p>
-         </footer>
+
          </div>
-    </section>
+    </div>
   )
 }
 
